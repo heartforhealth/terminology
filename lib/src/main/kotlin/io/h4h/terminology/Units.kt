@@ -10,7 +10,8 @@ enum class Units : CodeableEnumeration {
 
     Months,
     mmHg,
-    Bpm;
+    Bpm,
+    Kg;
 
     /**
      * UCUM Code
@@ -20,6 +21,7 @@ enum class Units : CodeableEnumeration {
             Months -> "mo"
             mmHg -> "mm[Hg]"
             Bpm -> "/min"
+            Kg -> "kg"
         }
 
     /**
@@ -36,6 +38,7 @@ enum class Units : CodeableEnumeration {
             Months -> "mo"
             mmHg -> "mmHg"
             Bpm -> "beats/minute"
+            Kg -> "kg"
         }
 
     /// no definition
