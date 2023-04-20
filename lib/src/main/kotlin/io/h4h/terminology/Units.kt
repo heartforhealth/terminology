@@ -10,8 +10,13 @@ enum class Units : CodeableEnumeration {
 
     Months,
     mmHg,
+    mmolPerL,
+    mgPerDl,
     Bpm,
-    Kg;
+    Kg,
+    Second,
+    Minutes,
+    Hours;
 
     /**
      * UCUM Code
@@ -20,8 +25,13 @@ enum class Units : CodeableEnumeration {
         get() = when (this) {
             Months -> "mo"
             mmHg -> "mm[Hg]"
+            mmolPerL -> "mmol/L"
             Bpm -> "/min"
             Kg -> "kg"
+            Second -> "s"
+            mgPerDl -> "mg/dL"
+            Minutes -> "m"
+            Hours -> "h"
         }
 
     /**
@@ -37,8 +47,13 @@ enum class Units : CodeableEnumeration {
         get() = when (this) {
             Months -> "mo"
             mmHg -> "mmHg"
+            mmolPerL -> "mmol/L"
             Bpm -> "beats/minute"
             Kg -> "kg"
+            Second -> "Sec"
+            mgPerDl -> "mg/dL"
+            Minutes -> "m"
+            Hours -> "h"
         }
 
     /// no definition

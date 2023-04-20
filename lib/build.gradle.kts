@@ -1,7 +1,7 @@
 
 
 group = "io.h4h"
-version = "0.1.1"
+version = "0.1.2"
 
 
 plugins {
@@ -64,10 +64,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
     // base definitions of FHIR data structures
-    implementation("io.h4h:fhir-base-kotlin:0.1.4")
-    // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm
-    api("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.4.0")
-
+    implementation("io.h4h:fhir-base-kotlin:0.1.6")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")

@@ -12,9 +12,14 @@ enum class Observations : CodeableEnumeration {
     BloodPressureSystolic,
     BloodPressureDiastolic,
     HeartRate,
+
     BodyWeight,
     BodyHeight,
-    CholesterolTotal;
+
+    CholesterolTotal,
+    BloodGlucose,
+    HoursAfterMeal,
+    Creatinine;
 
     /**
      * Loinc Code
@@ -28,6 +33,9 @@ enum class Observations : CodeableEnumeration {
             BodyWeight -> "3141-9"
             BodyHeight -> "8302-2"
             CholesterolTotal -> "14647-2"
+            BloodGlucose -> "2339-0"
+            Creatinine -> "38483-4"
+            HoursAfterMeal -> "55420-4"
         }
 
     /**
@@ -48,6 +56,9 @@ enum class Observations : CodeableEnumeration {
             BodyWeight -> "Body weight measured"
             BodyHeight -> "Body height"
             CholesterolTotal -> "Cholesterol [Moles/volume] in Serum or Plasma"
+            BloodGlucose -> "Glucose [Mass/volume] in Blood"
+            Creatinine -> "Creatinine [Mass/volume] in Blood"
+            HoursAfterMeal -> "Hours after meal"
         }
 
     /// no definition
