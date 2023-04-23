@@ -3,6 +3,7 @@ package io.h4h.terminology
 import io.h4h.fhir.r4.base.CodeableEnumeration
 
 
+
 /**
  * Set of terminology concepts
  * */
@@ -33,7 +34,7 @@ enum class Observations : CodeableEnumeration {
             BodyWeight -> "3141-9"
             BodyHeight -> "8302-2"
             CholesterolTotal -> "14647-2"
-            BloodGlucose -> "2339-0"
+            BloodGlucose -> "14743-9"
             Creatinine -> "38483-4"
             HoursAfterMeal -> "55420-4"
         }
@@ -56,7 +57,7 @@ enum class Observations : CodeableEnumeration {
             BodyWeight -> "Body weight measured"
             BodyHeight -> "Body height"
             CholesterolTotal -> "Cholesterol [Moles/volume] in Serum or Plasma"
-            BloodGlucose -> "Glucose [Mass/volume] in Blood"
+            BloodGlucose -> "Glucose [Moles/volume] in Capillary blood by Glucometer"
             Creatinine -> "Creatinine [Mass/volume] in Blood"
             HoursAfterMeal -> "Hours after meal"
         }
