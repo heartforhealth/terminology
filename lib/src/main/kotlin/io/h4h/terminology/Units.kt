@@ -16,7 +16,8 @@ enum class Units : CodeableEnumeration {
     Kg,
     Second,
     Minutes,
-    Hours;
+    Hours,
+    Cm;
 
     /**
      * UCUM Code
@@ -32,6 +33,7 @@ enum class Units : CodeableEnumeration {
             mgPerDl -> "mg/dL"
             Minutes -> "m"
             Hours -> "h"
+            Cm -> "cm"
         }
 
     /**
@@ -54,6 +56,7 @@ enum class Units : CodeableEnumeration {
             mgPerDl -> "mg/dL"
             Minutes -> "m"
             Hours -> "h"
+            Cm -> "cm"
         }
 
     /// no definition
