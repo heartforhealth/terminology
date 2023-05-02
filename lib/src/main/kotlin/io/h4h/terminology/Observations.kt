@@ -19,6 +19,7 @@ enum class Observations : CodeableEnumeration {
 
     CholesterolTotal,
     BloodGlucose,
+    BloodGlucoseFasting,
     HoursAfterMeal,
     Creatinine;
 
@@ -35,6 +36,7 @@ enum class Observations : CodeableEnumeration {
             BodyHeight -> "8302-2"
             CholesterolTotal -> "14647-2"
             BloodGlucose -> "14743-9"
+            BloodGlucoseFasting -> "14770-2"
             Creatinine -> "38483-4"
             HoursAfterMeal -> "55420-4"
         }
@@ -58,6 +60,7 @@ enum class Observations : CodeableEnumeration {
             BodyHeight -> "Body height"
             CholesterolTotal -> "Cholesterol [Moles/volume] in Serum or Plasma"
             BloodGlucose -> "Glucose [Moles/volume] in Capillary blood by Glucometer"
+            BloodGlucoseFasting -> "Fasting glucose [Moles/volume] in Capillary blood by Glucometer"
             Creatinine -> "Creatinine [Mass/volume] in Blood"
             HoursAfterMeal -> "Hours after meal"
         }
