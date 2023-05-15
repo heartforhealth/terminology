@@ -1,7 +1,7 @@
 package io.h4h.terminology.codesets
 
 import io.h4h.fhir.r4.base.CodeableEnumeration
-
+import io.h4h.terminology.Systems
 
 
 /**
@@ -30,7 +30,7 @@ enum class HoursAfterMeal : CodeableEnumeration {
     /**
      * Loinc System
      * */
-    override val system = "http://loinc.org"
+    override val system = Systems.Loinc.url
 
 
     /**

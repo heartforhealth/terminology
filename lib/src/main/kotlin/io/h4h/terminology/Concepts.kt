@@ -27,7 +27,7 @@ enum class Concepts : CodeableEnumeration {
         get() = when (this) {
             VitalSignsCategory -> "http://hl7.org/fhir/ValueSet/observation-category"
             PlanDefinitionTypeOrderSet -> "http://hl7.org/fhir/ValueSet/plan-definition-type"
-            BloodPressureMonitor -> "http://snomed.info/sct"
+            BloodPressureMonitor -> Systems.SNOMED.url
         }
 
 

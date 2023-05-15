@@ -44,7 +44,7 @@ enum class Observations : CodeableEnumeration {
     /**
      * Loinc System
      * */
-    override val system = "http://loinc.org"
+    override val system = Systems.Loinc.url
 
 
     /**

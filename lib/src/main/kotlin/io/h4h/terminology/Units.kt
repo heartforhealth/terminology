@@ -39,7 +39,7 @@ enum class Units : CodeableEnumeration {
     /**
      * UCUM System
      * */
-    override val system = "http://unitsofmeasure.org"
+    override val system = Systems.UCUM.url
 
 
     /**

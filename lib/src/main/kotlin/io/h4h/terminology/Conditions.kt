@@ -86,7 +86,7 @@ enum class Conditions : CodeableEnumeration {
         }
 
 
-    override val system = "http://snomed.info/sct"
+    override val system = Systems.SNOMED.url
 
 
     /**
