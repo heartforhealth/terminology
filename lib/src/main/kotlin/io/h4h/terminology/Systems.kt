@@ -16,7 +16,12 @@ enum class Systems {
     /**
      * Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures
      * */
-    UCUM;
+    UCUM,
+
+    /**
+     * MDC Object infrastructure and Device nomenclature
+     * */
+    MDC;
 
     /**
      * Formal URL
@@ -26,5 +31,6 @@ enum class Systems {
             Loinc -> "http://loinc.org"
             SNOMED -> "http://snomed.info/sct"
             UCUM -> "http://unitsofmeasure.org"
+            MDC -> "urn:oid:2.16.840.1.113883.6.24"
         }
 }

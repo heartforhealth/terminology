@@ -14,6 +14,9 @@ enum class Observations : CodeableEnumeration {
     BloodPressureDiastolic,
     HeartRate,
 
+    EKGStudy,
+    EKGStudy12Lead,
+
     BodyWeight,
     BodyHeight,
 
@@ -32,6 +35,8 @@ enum class Observations : CodeableEnumeration {
             BloodPressureSystolic -> "8480-6"
             BloodPressureDiastolic -> "8462-4"
             HeartRate -> "8867-4"
+            EKGStudy -> "11524-6"
+            EKGStudy12Lead -> "34534-8"
             BodyWeight -> "3141-9"
             BodyHeight -> "8302-2"
             CholesterolTotal -> "14647-2"
@@ -56,6 +61,8 @@ enum class Observations : CodeableEnumeration {
             BloodPressureSystolic -> "Systolic blood pressure"
             BloodPressureDiastolic -> "Diastolic blood pressure"
             HeartRate -> "Heart rate"
+            EKGStudy -> "EKG Study"
+            EKGStudy12Lead -> "12 lead EKG panel"
             BodyWeight -> "Body weight measured"
             BodyHeight -> "Body height"
             CholesterolTotal -> "Cholesterol [Moles/volume] in Serum or Plasma"

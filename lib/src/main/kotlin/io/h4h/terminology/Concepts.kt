@@ -7,7 +7,9 @@ enum class Concepts : CodeableEnumeration {
 
     VitalSignsCategory,
     PlanDefinitionTypeOrderSet,
-    BloodPressureMonitor;
+    BloodPressureMonitor,
+    Procedure,
+    Symptom;
 
 
     /**
@@ -18,6 +20,8 @@ enum class Concepts : CodeableEnumeration {
             VitalSignsCategory -> "vital-signs"
             PlanDefinitionTypeOrderSet -> "order-set"
             BloodPressureMonitor -> "466086009"
+            Procedure -> "procedure"
+            Symptom -> "75325-1"
         }
 
     /**
@@ -28,6 +32,8 @@ enum class Concepts : CodeableEnumeration {
             VitalSignsCategory -> "http://hl7.org/fhir/ValueSet/observation-category"
             PlanDefinitionTypeOrderSet -> "http://hl7.org/fhir/ValueSet/plan-definition-type"
             BloodPressureMonitor -> Systems.SNOMED.url
+            Procedure -> "https://www.hl7.org/fhir/procedure.html"
+            Symptom -> Systems.Loinc.url
         }
 
 
@@ -39,10 +45,12 @@ enum class Concepts : CodeableEnumeration {
             VitalSignsCategory -> "Vital Signs"
             PlanDefinitionTypeOrderSet -> "Order Set"
             BloodPressureMonitor -> "Automatic-inflation electronic sphygmomanometer, portable, arm/wrist (physical object)"
+            Procedure -> name
+            Symptom -> name
         }
+
 
     /// no definition
     override val definition: String? = null
-
 
 }
