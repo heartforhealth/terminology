@@ -52,6 +52,7 @@ enum class AppleWatchEKGClassification : CodeableEnumeration {
     /**
      * Definition
      * */
-    override val definition: String = display
+    override val definition: String?
+        get() = display
 
 }
