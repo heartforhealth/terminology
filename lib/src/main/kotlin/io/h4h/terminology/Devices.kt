@@ -20,7 +20,7 @@ enum class Devices {
     KardiaMobile6L;
 
 
-    private val display: String
+    val display: String
         get() = when(this) {
             OmronHEM9120 -> "Omron HEM-9210T Bluetooth Blood Pressure Monitor"
             IHealthTrackBP550BT -> "iHealth Track (KN-550BT) Bluetooth Blood Pressure Monitor"
@@ -32,7 +32,7 @@ enum class Devices {
         }
 
 
-    private val manufacturer: String
+    val manufacturer: String
         get() = when(this) {
             OmronHEM9120 -> "Omron"
             IHealthTrackBP550BT,
