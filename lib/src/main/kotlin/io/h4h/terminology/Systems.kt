@@ -21,7 +21,17 @@ enum class Systems {
     /**
      * MDC Object infrastructure and Device nomenclature
      * */
-    MDC;
+    MDC,
+
+    /**
+     * Burgerservicenummer
+     * */
+    BSN,
+
+    /**
+     * Ontario, Canada Personal Health Number
+     * */
+    CanadaOntarioPersonalHealthNumber;
 
     /**
      * Formal URL
@@ -32,5 +42,7 @@ enum class Systems {
             SNOMED -> "http://snomed.info/sct"
             UCUM -> "http://unitsofmeasure.org"
             MDC -> "urn:oid:2.16.840.1.113883.6.24"
+            BSN -> "http://fhir.nl/fhir/NamingSystem/bsn"
+            CanadaOntarioPersonalHealthNumber -> "https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-patient-hcn"
         }
 }
