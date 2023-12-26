@@ -1,12 +1,12 @@
 
 
 group = "io.h4h"
-version = "0.1.11-RC1"
+version = "0.2.0"
 
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.7.10"
+    id("org.jetbrains.kotlin.jvm") version "1.9.22"
 
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
@@ -14,7 +14,7 @@ plugins {
     `maven-publish`
 
     // Kotlinx Serialization
-    kotlin("plugin.serialization") version "1.7.10"
+    kotlin("plugin.serialization") version "1.9.22"
 }
 
 repositories {
@@ -64,7 +64,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
     // base definitions of FHIR data structures
-    api("io.h4h:fhir-base-kotlin:0.1.8-RC1")
+    api("io.h4h:fhir-base-kotlin:0.2.0")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")

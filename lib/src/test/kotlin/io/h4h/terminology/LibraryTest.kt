@@ -6,11 +6,11 @@ package io.h4h.terminology
 import io.h4h.terminology.codesets.AppleWatchEKGClassification
 import io.h4h.terminology.codesets.MDC
 import kotlin.test.Test
-import kotlin.test.assertTrue
+
 
 class LibraryTest {
     @Test fun someLibraryMethodReturnsTrue() {
-        // println(MDC.values())
+        println(MDC.values())
         println(AppleWatchEKGClassification.values())
         println(AppleWatchEKGClassification.sinusRhythm.coding)
     }
