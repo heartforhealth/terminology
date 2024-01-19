@@ -25,10 +25,10 @@ enum class Devices {
             OmronHEM9120 -> "Omron HEM-9210T (Blood pressure)"
             IHealthTrackBP550BT -> "iHealth Track (Blood pressure)"
             IHealthLinaHS2 -> "iHealth Lina (Body weight)"
-            IHealthGlucoBG5SKIT -> "iHealth Gluco+ (BG5S) Smart Wireless Gluco-Monitoring System"
+            IHealthGlucoBG5SKIT -> "iHealth Gluco+ BG5S (Glucose)"
             AppleWatch -> "Apple Watch (ECG)"
             KardiaMobile -> "Kardia Mobile 1L (ECG)"
-            KardiaMobile6L -> "KardiaMobile 6L"
+            KardiaMobile6L -> "KardiaMobile 6L (ECG)"
         }
 
 
