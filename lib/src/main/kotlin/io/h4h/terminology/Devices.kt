@@ -22,13 +22,13 @@ enum class Devices {
 
     val display: String
         get() = when(this) {
-            OmronHEM9120 -> "Omron HEM-9210T Bluetooth Blood Pressure Monitor"
-            IHealthTrackBP550BT -> "iHealth Track (KN-550BT) Bluetooth Blood Pressure Monitor"
-            IHealthLinaHS2 -> "iHealth HS2 Lina Body Analysis Scale"
-            IHealthGlucoBG5SKIT -> "iHealth Gluco+ (BG5S) Smart Wireless Gluco-Monitoring System"
-            AppleWatch -> "Apple Watch"
-            KardiaMobile -> "KardiaMobile"
-            KardiaMobile6L -> "KardiaMobile 6L"
+            OmronHEM9120 -> "Omron HEM-9210T (Blood pressure)"
+            IHealthTrackBP550BT -> "iHealth Track (Blood pressure)"
+            IHealthLinaHS2 -> "iHealth Lina (Body weight)"
+            IHealthGlucoBG5SKIT -> "iHealth Gluco+ BG5S (Glucose)"
+            AppleWatch -> "Apple Watch (ECG)"
+            KardiaMobile -> "KardiaMobile 1L (ECG)"
+            KardiaMobile6L -> "KardiaMobile 6L (ECG)"
         }
 
 
