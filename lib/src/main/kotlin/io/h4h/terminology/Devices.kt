@@ -27,7 +27,7 @@ enum class Devices {
             IHealthLinaHS2 -> "iHealth Lina (Body weight)"
             IHealthGlucoBG5SKIT -> "iHealth Gluco+ BG5S (Glucose)"
             AppleWatch -> "Apple Watch (ECG)"
-            KardiaMobile -> "Kardia Mobile 1L (ECG)"
+            KardiaMobile -> "KardiaMobile 1L (ECG)"
             KardiaMobile6L -> "KardiaMobile 6L (ECG)"
         }
 
