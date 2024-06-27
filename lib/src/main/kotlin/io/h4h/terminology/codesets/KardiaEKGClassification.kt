@@ -6,28 +6,42 @@ import io.h4h.fhir.r4.base.CodeableEnumeration
 /**
  * The internal EKG algorithm already generates an interpretation according to this enum.
  * */
-enum class KardiaEKGClassification(val _name: String) : CodeableEnumeration {
+enum class KardiaEKGClassification : CodeableEnumeration {
 
-    normal("normal"),
-    sinus_rhythm("sinus_rhythm"),
-    afib("afib"),
-    bradycardia("bradycardia"),
-    no_analysis("no_analysis"),
-    sinus_rhythm_multiple_pacs("sinus_rhythm,multiple_pacs"),
-    sinus_rhythm_multiple_pvcs("sinus_rhythm,multiple_pvcs"),
-    sinus_rhythm_wide_qrs("sinus_rhythm,wide_qrs"),
-    tachycardia("tachycardia"),
-    too_long("too_long"),
-    too_short("too_short"),
-    unclassified("unclassified"),
-    unreadable("unreadable");
+    normal,
+    sinus_rhythm,
+    afib,
+    bradycardia,
+    no_analysis,
+    sinus_rhythm_multiple_pacs,
+    sinus_rhythm_multiple_pvcs,
+    sinus_rhythm_wide_qrs,
+    tachycardia,
+    too_long,
+    too_short,
+    unclassified,
+    unreadable;
 
 
     /**
      * Code
      * */
     override val code: String
-        get() = _name
+        get() = when (this) {
+            normal -> "normal"
+            sinus_rhythm -> "sinus_rhythm"
+            afib -> "afib"
+            bradycardia -> "bradycardia"
+            no_analysis -> "no_analysis"
+            sinus_rhythm_multiple_pacs -> "sinus_rhythm,multiple_pacs"
+            sinus_rhythm_multiple_pvcs -> "sinus_rhythm,multiple_pvcs"
+            sinus_rhythm_wide_qrs -> "sinus_rhythm,wide_qrs"
+            tachycardia -> "tachycardia"
+            too_long -> "too_long"
+            too_short -> "too_short"
+            unclassified -> "unclassified"
+            unreadable -> "unreadable"
+        }
 
 
     /**
