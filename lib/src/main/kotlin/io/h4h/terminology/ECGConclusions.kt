@@ -10,26 +10,26 @@ enum class ECGConclusions : CodeableEnumeration {
 
     SinusRhythm,
     AtrialFibrillation,
-    Noise,
     SinusBradycardia,
-    SinusTachycardia,
     AtrialFlutter,
     PrematureAtrialComplexes,
     PrematureVentricularComplexes,
-    SupraventricularTachycardia,
     AVNRT,
     AtrialTachycardia,
+    SinusTachycardia,
+    SupraventricularTachycardia,
+    SustainedVentricularTachycardia,
     Asystole,
     AtrioventricularBlockI,
     AtrioventricularBlockII,
     AtrioventricularBlockIII,
     SinusArrest,
     NSVT,
-    SustainedVentricularTachycardia,
     SinoatrialBlock,
     Bigeminy,
     Trigeminy,
     BundleBranchBlock,
+    Noise,
 
     // custom
     NoAssessmentPossible,
@@ -72,15 +72,18 @@ enum class ECGConclusions : CodeableEnumeration {
             Malfunction -> "164853006"
             Unclassified -> "1491000"
             Other -> "74964007"
-            Bigeminy -> TODO()
 
-            NoAssessmentPossible -> name
-            Break -> name
-            TooLong -> name
-            TooShort -> name
-            DoublePrematureAtrialComplexes -> name
+            Bigeminy -> TODO("251173003 | Atrial bigeminy (disorder)")
+
+            // custom codes
+            NoAssessmentPossible,
+            Break,
+            TooLong,
+            TooShort,
+            DoublePrematureAtrialComplexes,
             DoublePrematureVentricularComplexes -> name
         }
+
 
     /**
      * System
@@ -91,7 +94,7 @@ enum class ECGConclusions : CodeableEnumeration {
             NoAssessmentPossible, Break,
             TooLong, TooShort,
             DoublePrematureAtrialComplexes,
-            DoublePrematureVentricularComplexes -> "com.h4h.conclusion"
+            DoublePrematureVentricularComplexes -> Systems.H4H.url
 
             else -> Systems.SNOMED.url
         }
@@ -128,6 +131,7 @@ enum class ECGConclusions : CodeableEnumeration {
             Unclassified -> "Unclassified (qualifier value)"
             Other -> "Other (qualifier value)"
 
+            // custom codes
             NoAssessmentPossible -> "No Assessment possible"
             Break -> "Break"
             TooLong -> "Recording too long"

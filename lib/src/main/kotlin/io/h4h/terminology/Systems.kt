@@ -31,7 +31,12 @@ enum class Systems {
     /**
      * Ontario, Canada Personal Health Number
      * */
-    CanadaOntarioPersonalHealthNumber;
+    CanadaOntarioPersonalHealthNumber,
+
+    /**
+     * Heart for Health custom codes
+     * */
+    H4H;
 
     /**
      * Formal URL
@@ -44,5 +49,6 @@ enum class Systems {
             MDC -> "urn:oid:2.16.840.1.113883.6.24"
             BSN -> "http://fhir.nl/fhir/NamingSystem/bsn"
             CanadaOntarioPersonalHealthNumber -> "https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-patient-hcn"
+            H4H -> "com.h4h.conclusion"
         }
 }
