@@ -8,7 +8,7 @@ import io.h4h.fhir.r4.base.CodeableEnumeration
  *
  * Apple Watch Series 4 and above has an electrical heart sensor that, when using the ECG app, enables the generation and analysis of an ECG similar to a Lead I ECG. The internal EKG algorithm already generates an interpretation according to this enum.
  * */
-enum class AppleWatchEKGClassification : CodeableEnumeration {
+enum class AppleWatchECGClassification : CodeableEnumeration {
 
     notSet,
     sinusRhythm,
@@ -28,7 +28,7 @@ enum class AppleWatchEKGClassification : CodeableEnumeration {
 
 
     /**
-     * Loinc System
+     * Apple System
      * */
     override val system = "com.apple.health.HKElectrocardiogram.Classification"
 

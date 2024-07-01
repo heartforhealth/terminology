@@ -6,7 +6,7 @@ import io.h4h.fhir.r4.base.CodeableEnumeration
 /**
  * The internal EKG algorithm already generates an interpretation according to this enum.
  * */
-enum class KardiaEKGClassification : CodeableEnumeration {
+enum class KardiaECGClassification : CodeableEnumeration {
 
     normal,
     sinus_rhythm,
@@ -45,7 +45,7 @@ enum class KardiaEKGClassification : CodeableEnumeration {
 
 
     /**
-     * Loinc System
+     * AliveCor Kardia System
      * */
     override val system = "com.kardia.conclusion"
 
@@ -60,8 +60,8 @@ enum class KardiaEKGClassification : CodeableEnumeration {
             afib -> "Atrial fibrillation"
             bradycardia -> "Bradycardia"
             no_analysis -> "No analysis possible"
-            sinus_rhythm_multiple_pacs -> "Sinusrhythm, PACs"
-            sinus_rhythm_multiple_pvcs -> "Sinusrhythm, PVCs"
+            sinus_rhythm_multiple_pacs -> "Sinusrhythm, Multiple PACs"
+            sinus_rhythm_multiple_pvcs -> "Sinusrhythm, Multiple PVCs"
             sinus_rhythm_wide_qrs -> "Sinusrhythm, wide QRS"
             tachycardia -> "Tachycardia"
             too_long -> "Too long"

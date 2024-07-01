@@ -3,9 +3,11 @@ package io.h4h.terminology
 import io.h4h.fhir.r4.base.CodeableEnumeration
 
 
+/**
+ * Enum with all conclusion that a Practitioner makes after reviewing an ECG
+ * */
 enum class ECGConclusions : CodeableEnumeration {
 
-    NoAssessmentPossible,
     SinusRhythm,
     AtrialFibrillation,
     Noise,
@@ -28,10 +30,17 @@ enum class ECGConclusions : CodeableEnumeration {
     Bigeminy,
     Trigeminy,
     BundleBranchBlock,
+
+    // custom
+    NoAssessmentPossible,
     Break,
     Malfunction,
     Unclassified,
-    Other;
+    Other,
+    TooLong,
+    TooShort,
+    DoublePrematureAtrialComplexes,
+    DoublePrematureVentricularComplexes;
 
 
     /**
@@ -39,7 +48,6 @@ enum class ECGConclusions : CodeableEnumeration {
      * */
     override val code: String
         get() = when (this) {
-            NoAssessmentPossible -> TODO()
             SinusRhythm -> "251150006"
             AtrialFibrillation -> "164889003"
             Noise -> "251142002"
@@ -59,19 +67,34 @@ enum class ECGConclusions : CodeableEnumeration {
             NSVT -> "1237128001"
             SustainedVentricularTachycardia -> "426525004"
             SinoatrialBlock -> "65778007"
-            Bigeminy -> TODO()
             Trigeminy -> "29036000"
             BundleBranchBlock -> "164907000"
-            Break -> TODO()
             Malfunction -> "164853006"
             Unclassified -> "1491000"
             Other -> "74964007"
+            Bigeminy -> TODO()
+
+            NoAssessmentPossible -> name
+            Break -> name
+            TooLong -> name
+            TooShort -> name
+            DoublePrematureAtrialComplexes -> name
+            DoublePrematureVentricularComplexes -> name
         }
 
     /**
      * System
      * */
-    override val system: String = Systems.SNOMED.url
+    override val system: String
+        get() = when (this) {
+            // custom codes
+            NoAssessmentPossible, Break,
+            TooLong, TooShort,
+            DoublePrematureAtrialComplexes,
+            DoublePrematureVentricularComplexes -> "com.h4h.conclusion"
+
+            else -> Systems.SNOMED.url
+        }
 
 
     /**
@@ -79,7 +102,6 @@ enum class ECGConclusions : CodeableEnumeration {
      * */
     override val display: String
         get() = when (this) {
-            NoAssessmentPossible -> ""
             SinusRhythm -> "Sinus rhythm (finding)"
             AtrialFibrillation -> "Electrocardiographic atrial fibrillation (finding)"
             Noise -> "Noisy electrocardiogram recording (finding)"
@@ -99,13 +121,19 @@ enum class ECGConclusions : CodeableEnumeration {
             NSVT -> "Monomorphic NSVT (non-sustained ventricular tachycardia)"
             SustainedVentricularTachycardia -> "Sustained ventricular tachycardia (disorder)"
             SinoatrialBlock -> "Sinoatrial block (disorder)"
-            Bigeminy -> TODO()
+            Bigeminy -> "Bigeminy"
             Trigeminy -> "Pulsus trigeminus (finding)"
             BundleBranchBlock -> "Electrocardiographic right bundle branch block (finding)"
-            Break -> TODO()
             Malfunction -> "Electrocardiogram not done (situation)"
             Unclassified -> "Unclassified (qualifier value)"
             Other -> "Other (qualifier value)"
+
+            NoAssessmentPossible -> "No Assessment possible"
+            Break -> "Break"
+            TooLong -> "Recording too long"
+            TooShort -> "Recording too short"
+            DoublePrematureAtrialComplexes -> "Double PACs (Premature Atrial Complexes)"
+            DoublePrematureVentricularComplexes -> "Double PVCs (Premature Ventricular Complexes)"
         }
 
 

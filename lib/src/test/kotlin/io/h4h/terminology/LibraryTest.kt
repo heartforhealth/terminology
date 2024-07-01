@@ -3,7 +3,7 @@
  */
 package io.h4h.terminology
 
-import io.h4h.terminology.codesets.AppleWatchEKGClassification
+import io.h4h.terminology.codesets.AppleWatchECGClassification
 import io.h4h.terminology.codesets.MDC
 import kotlin.test.Test
 
@@ -11,7 +11,7 @@ import kotlin.test.Test
 class LibraryTest {
     @Test fun someLibraryMethodReturnsTrue() {
         println(MDC.values())
-        println(AppleWatchEKGClassification.values())
-        println(AppleWatchEKGClassification.sinusRhythm.coding)
+        println(AppleWatchECGClassification.values())
+        println(AppleWatchECGClassification.sinusRhythm.coding)
     }
 }
