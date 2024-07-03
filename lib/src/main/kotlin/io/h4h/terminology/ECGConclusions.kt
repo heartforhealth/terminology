@@ -26,7 +26,8 @@ enum class ECGConclusions : CodeableEnumeration {
     SinusArrest,
     NSVT,
     SinoatrialBlock,
-    Bigeminy,
+    VentricularBigeminy,
+    SupraventricularBigeminy,
     Trigeminy,
     BundleBranchBlock,
     Noise,
@@ -68,12 +69,12 @@ enum class ECGConclusions : CodeableEnumeration {
             SustainedVentricularTachycardia -> "426525004"
             SinoatrialBlock -> "65778007"
             Trigeminy -> "29036000"
+            VentricularBigeminy -> "11157007"
+            SupraventricularBigeminy -> "251168009"
             BundleBranchBlock -> "164907000"
             Malfunction -> "164853006"
             Unclassified -> "1491000"
             Other -> "74964007"
-
-            Bigeminy -> TODO("251173003 | Atrial bigeminy (disorder)")
 
             // custom codes
             NoAssessmentPossible,
@@ -105,31 +106,32 @@ enum class ECGConclusions : CodeableEnumeration {
      * */
     override val display: String
         get() = when (this) {
-            SinusRhythm -> "Sinus rhythm (finding)"
-            AtrialFibrillation -> "Electrocardiographic atrial fibrillation (finding)"
-            Noise -> "Noisy electrocardiogram recording (finding)"
-            SinusBradycardia -> "Electrocardiogram: sinus bradycardia (finding)"
-            SinusTachycardia -> "Electrocardiogram: sinus tachycardia (finding)"
-            AtrialFlutter -> "Electrocardiographic atrial flutter (finding)"
-            PrematureAtrialComplexes -> "Electrocardiographic Atrial premature complexes (finding)"
-            PrematureVentricularComplexes -> "Electrocardiographic Ventricular premature complexes (finding)"
-            SupraventricularTachycardia -> "Electrocardiographic supraventricular tachycardia (finding)"
-            AVNRT -> "Typical atrioventricular nodal re-entry tachycardia (disorder)"
-            AtrialTachycardia -> "Electrocardiographic atrial tachycardia (finding)"
-            Asystole -> "Electrocardiographic asystole (finding)"
-            AtrioventricularBlockI -> "First degree atrioventricular block (disorder)"
-            AtrioventricularBlockII -> "Second degree atrioventricular block (disorder)"
-            AtrioventricularBlockIII -> "Complete atrioventricular block (disorder)"
-            SinusArrest -> "Sinus arrest (disorder)"
+            SinusRhythm -> "Sinus rhythm"
+            AtrialFibrillation -> "Electrocardiographic atrial fibrillation"
+            Noise -> "Noisy electrocardiogram recording"
+            SinusBradycardia -> "Electrocardiogram: sinus bradycardia"
+            SinusTachycardia -> "Electrocardiogram: sinus tachycardia"
+            AtrialFlutter -> "Electrocardiographic atrial flutter"
+            PrematureAtrialComplexes -> "Electrocardiographic Atrial premature complexes"
+            PrematureVentricularComplexes -> "Electrocardiographic Ventricular premature complexes"
+            SupraventricularTachycardia -> "Electrocardiographic supraventricular tachycardia"
+            AVNRT -> "Typical atrioventricular nodal re-entry tachycardia"
+            AtrialTachycardia -> "Electrocardiographic atrial tachycardia"
+            Asystole -> "Electrocardiographic asystole"
+            AtrioventricularBlockI -> "First degree atrioventricular block"
+            AtrioventricularBlockII -> "Second degree atrioventricular block"
+            AtrioventricularBlockIII -> "Complete atrioventricular block"
+            SinusArrest -> "Sinus arrest"
             NSVT -> "Monomorphic NSVT (non-sustained ventricular tachycardia)"
-            SustainedVentricularTachycardia -> "Sustained ventricular tachycardia (disorder)"
-            SinoatrialBlock -> "Sinoatrial block (disorder)"
-            Bigeminy -> "Bigeminy"
-            Trigeminy -> "Pulsus trigeminus (finding)"
-            BundleBranchBlock -> "Electrocardiographic right bundle branch block (finding)"
-            Malfunction -> "Electrocardiogram not done (situation)"
-            Unclassified -> "Unclassified (qualifier value)"
-            Other -> "Other (qualifier value)"
+            SustainedVentricularTachycardia -> "Sustained ventricular tachycardia"
+            SinoatrialBlock -> "Sinoatrial block"
+            VentricularBigeminy -> "Ventricular bigeminy"
+            SupraventricularBigeminy -> "Supraventricular bigeminy"
+            Trigeminy -> "Pulsus trigeminus"
+            BundleBranchBlock -> "Electrocardiographic right bundle branch block"
+            Malfunction -> "Electrocardiogram not done"
+            Unclassified -> "Unclassified"
+            Other -> "Other"
 
             // custom codes
             NoAssessmentPossible -> "No Assessment possible"
