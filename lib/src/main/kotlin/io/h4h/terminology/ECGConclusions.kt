@@ -27,7 +27,7 @@ enum class ECGConclusions : CodeableEnumeration {
     NSVT,
     SinoatrialBlock,
     VentricularBigeminy,
-    SupraventricularBigeminy,
+    // SupraventricularBigeminy,
     Trigeminy,
     BundleBranchBlock,
     Noise,
@@ -70,7 +70,7 @@ enum class ECGConclusions : CodeableEnumeration {
             SinoatrialBlock -> "65778007"
             Trigeminy -> "29036000"
             VentricularBigeminy -> "11157007"
-            SupraventricularBigeminy -> "251168009"
+            // SupraventricularBigeminy -> "251168009"
             BundleBranchBlock -> "164907000"
             Malfunction -> "164853006"
             Unclassified -> "1491000"
@@ -126,10 +126,10 @@ enum class ECGConclusions : CodeableEnumeration {
             SustainedVentricularTachycardia -> "Sustained ventricular tachycardia"
             SinoatrialBlock -> "Sinoatrial block"
             VentricularBigeminy -> "Ventricular bigeminy"
-            SupraventricularBigeminy -> "Supraventricular bigeminy"
+            // SupraventricularBigeminy -> "Supraventricular bigeminy"
             Trigeminy -> "Pulsus trigeminus"
             BundleBranchBlock -> "Electrocardiographic right bundle branch block"
-            Malfunction -> "Electrocardiogram not done"
+            Malfunction -> "Malfunction / Electrocardiogram not done"
             Unclassified -> "Unclassified"
             Other -> "Other"
 
