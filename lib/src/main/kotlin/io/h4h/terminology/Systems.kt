@@ -35,8 +35,19 @@ enum class Systems {
 
     /**
      * Heart for Health custom codes
-     * */
-    H4H;
+     */
+    H4H,
+
+    /**
+     * Kardia ECGs custom codes
+     */
+    Kardia,
+
+    /**
+     * AppleWatch ECGs custom codes
+     */
+    AppleECGs;
+
 
     /**
      * Formal URL
@@ -50,5 +61,7 @@ enum class Systems {
             BSN -> "http://fhir.nl/fhir/NamingSystem/bsn"
             CanadaOntarioPersonalHealthNumber -> "https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-patient-hcn"
             H4H -> "com.h4h.conclusion"
+            Kardia -> "com.kardia.conclusion"
+            AppleECGs -> "com.apple.health.HKElectrocardiogram.Classification"
         }
 }
