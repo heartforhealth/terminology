@@ -31,6 +31,7 @@ enum class ECGConclusions : CodeableEnumeration {
     Trigeminy,
     BundleBranchBlock,
     Noise,
+    SinusArrhythmia,
 
     // custom
     NoAssessmentPossible,
@@ -74,6 +75,7 @@ enum class ECGConclusions : CodeableEnumeration {
             BundleBranchBlock -> "164907000"
             Malfunction -> "164853006"
             Unclassified -> "1491000"
+            SinusArrhythmia -> "423175003"
             Other -> "74964007"
 
             // custom codes
@@ -132,6 +134,7 @@ enum class ECGConclusions : CodeableEnumeration {
             Malfunction -> "Malfunction / Electrocardiogram not done"
             Unclassified -> "Unclassified"
             Other -> "Other"
+            SinusArrhythmia -> "Sinus arrhythmia"
 
             // custom codes
             NoAssessmentPossible -> "No Assessment possible"
