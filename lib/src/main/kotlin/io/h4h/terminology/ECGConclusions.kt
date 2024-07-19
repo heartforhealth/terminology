@@ -10,6 +10,7 @@ enum class ECGConclusions : CodeableEnumeration {
 
     SinusRhythm,
     AtrialFibrillation,
+    SinusArrhythmia,
     SinusBradycardia,
     AtrialFlutter,
     PrematureAtrialComplexes,
@@ -51,7 +52,7 @@ enum class ECGConclusions : CodeableEnumeration {
         get() = when (this) {
             SinusRhythm -> "251150006"
             AtrialFibrillation -> "164889003"
-            Noise -> "251142002"
+            SinusArrhythmia -> "423175003"
             SinusBradycardia -> "426177001"
             SinusTachycardia -> "427084000"
             AtrialFlutter -> "164890007"
@@ -74,6 +75,7 @@ enum class ECGConclusions : CodeableEnumeration {
             BundleBranchBlock -> "164907000"
             Malfunction -> "164853006"
             Unclassified -> "1491000"
+            Noise -> "251142002"
             Other -> "74964007"
 
             // custom codes
@@ -108,7 +110,7 @@ enum class ECGConclusions : CodeableEnumeration {
         get() = when (this) {
             SinusRhythm -> "Sinus rhythm"
             AtrialFibrillation -> "Electrocardiographic atrial fibrillation"
-            Noise -> "Noisy electrocardiogram recording"
+            SinusArrhythmia -> "Sinus arrhythmia"
             SinusBradycardia -> "Electrocardiogram: sinus bradycardia"
             SinusTachycardia -> "Electrocardiogram: sinus tachycardia"
             AtrialFlutter -> "Electrocardiographic atrial flutter"
@@ -131,6 +133,7 @@ enum class ECGConclusions : CodeableEnumeration {
             BundleBranchBlock -> "Electrocardiographic right bundle branch block"
             Malfunction -> "Malfunction / Electrocardiogram not done"
             Unclassified -> "Unclassified"
+            Noise -> "Noisy electrocardiogram recording"
             Other -> "Other"
 
             // custom codes
