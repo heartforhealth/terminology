@@ -64,7 +64,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
     // base definitions of FHIR data structures
-    api("io.h4h:fhir-base-kotlin:0.2.2")
+    api("io.h4h:fhir-base-kotlin:0.2.3")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
