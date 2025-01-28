@@ -83,4 +83,15 @@ enum class Devices {
             )
         }
 
+        val extension: MutableList<Extension>
+            get() = when(this) {
+                OmronHEM9120 -> mutableListOf(Extension("ccn", valueString = "off"), Extension("sca", valueString = "off"), Extension("call-center", valueString = "off"))
+                IHealthGlucoBG5SKIT -> mutableListOf(Extension("ccn", valueString = "off"), Extension("sca", valueString = "off"), Extension("call-center", valueString = "off"))
+                KardiaMobile6L -> mutableListOf(Extension("ccn", valueString = "off"), Extension("sca", valueString = "off"), Extension("call-center", valueString = "off"))
+                IHealthTrackBP550BT -> TODO()
+                IHealthLinaHS2 -> TODO()
+                AppleWatch -> TODO()
+                KardiaMobile -> TODO()
+            }
+
 }
