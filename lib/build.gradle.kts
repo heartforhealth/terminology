@@ -1,7 +1,7 @@
 
 
 group = "io.h4h"
-version = "0.2.9"
+version = "0.2.10"
 
 
 plugins {

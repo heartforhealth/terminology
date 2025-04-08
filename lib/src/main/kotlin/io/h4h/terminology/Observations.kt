@@ -16,6 +16,7 @@ enum class Observations : CodeableEnumeration {
 
     EKGStudy,
     EKGStudy12Lead,
+    EKGLeadI,
 
     BodyWeight,
     BodyHeight,
@@ -36,6 +37,7 @@ enum class Observations : CodeableEnumeration {
             BloodPressureDiastolic -> "8462-4"
             HeartRate -> "8867-4"
             EKGStudy -> "11524-6"
+            EKGLeadI -> "44967-8"
             EKGStudy12Lead -> "34534-8"
             BodyWeight -> "3141-9"
             BodyHeight -> "8302-2"
@@ -62,6 +64,7 @@ enum class Observations : CodeableEnumeration {
             BloodPressureDiastolic -> "Diastolic blood pressure"
             HeartRate -> "Heart rate"
             EKGStudy -> "EKG Study"
+            EKGLeadI -> "Lead I"
             EKGStudy12Lead -> "12 lead EKG panel"
             BodyWeight -> "Body weight measured"
             BodyHeight -> "Body height"
