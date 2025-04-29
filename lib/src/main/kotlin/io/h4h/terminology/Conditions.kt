@@ -35,7 +35,7 @@ enum class Conditions : CodeableEnumeration {
     AnginaPectoris,
     PeripheralVascularDisease,
     Arrhythmia,
-
+    CardiovascularRiskManagement,
 
     /**
      * Other things used mainly for inputs
@@ -77,6 +77,7 @@ enum class Conditions : CodeableEnumeration {
             AnginaPectoris -> "194828000"
             PeripheralVascularDisease -> "400047006"
             Arrhythmia -> "698247007"
+            CardiovascularRiskManagement -> "827181004"
 
             /// other things
             PhysicalActivity -> "68130003"
@@ -119,6 +120,7 @@ enum class Conditions : CodeableEnumeration {
             AnginaPectoris -> "Angina pectoris"
             PeripheralVascularDisease -> "Peripheral vascular disease"
             Arrhythmia -> "Cardiac arrhythmia"
+            CardiovascularRiskManagement -> "CVRM"
 
             /// other things
             PhysicalActivity -> "Physical activity"
