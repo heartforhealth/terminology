@@ -3,7 +3,6 @@ package io.h4h.terminology
 import io.h4h.fhir.r4.base.CodeableEnumeration
 
 
-
 /**
  * Set of terminology concepts
  * */
@@ -17,6 +16,11 @@ enum class Observations : CodeableEnumeration {
     EKGStudy,
     EKGStudy12Lead,
     EKGLeadI,
+    EKGLeadII,
+    EKGLeadIII,
+    EKGaVR,
+    EKGaVL,
+    EKGLaVF,
 
     BodyWeight,
     BodyHeight,
@@ -38,7 +42,6 @@ enum class Observations : CodeableEnumeration {
             BloodPressureDiastolic -> "8462-4"
             HeartRate -> "8867-4"
             EKGStudy -> "11524-6"
-            EKGLeadI -> "44967-8"
             EKGStudy12Lead -> "34534-8"
             BodyWeight -> "3141-9"
             BodyHeight -> "8302-2"
@@ -47,6 +50,7 @@ enum class Observations : CodeableEnumeration {
             BloodGlucoseFasting -> "14770-2"
             Creatinine -> "38483-4"
             HoursAfterMeal -> "55420-4"
+            EKGLeadI, EKGLeadII, EKGLeadIII, EKGaVR, EKGaVL, EKGLaVF -> "44967-8"
             LdlCholesterol -> "2089-1"
         }
 
@@ -66,7 +70,6 @@ enum class Observations : CodeableEnumeration {
             BloodPressureDiastolic -> "Diastolic blood pressure"
             HeartRate -> "Heart rate"
             EKGStudy -> "EKG Study"
-            EKGLeadI -> "Lead I"
             EKGStudy12Lead -> "12 lead EKG panel"
             BodyWeight -> "Body weight measured"
             BodyHeight -> "Body height"
@@ -75,6 +78,12 @@ enum class Observations : CodeableEnumeration {
             BloodGlucoseFasting -> "Fasting glucose [Moles/volume] in Capillary blood by Glucometer"
             Creatinine -> "Creatinine [Mass/volume] in Blood"
             HoursAfterMeal -> "Hours after meal"
+            EKGLeadI -> "Lead I"
+            EKGLeadII -> "Lead II"
+            EKGLeadIII -> "Lead III"
+            EKGaVR -> "aVR"
+            EKGaVL -> "aVL"
+            EKGLaVF -> "aVF"
             LdlCholesterol -> "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
         }
 
